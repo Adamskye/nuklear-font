@@ -1,4 +1,4 @@
-#include "font.h"
+#include "nk_font.h"
 #include <assert.h>
 #include <math.h>
 #include <stdio.h>
@@ -118,7 +118,6 @@ static void nkf_init_group(struct nkf_font *font, unsigned group_idx) {
 void nkf_clean_font(struct nkf_font *font) {
 	nkf_clear_atlas(font);
 	if (font->font_buf) free(font->font_buf);
-	memset(font, 0, sizeof(*font));
 }
 
 void nkf_clear_atlas(struct nkf_font *font) {

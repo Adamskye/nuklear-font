@@ -14,7 +14,7 @@ This is a work-in-progress.
 Compile your program with `nk_font.c` and `nk_font.h`. Make sure the dependencies are in an included directory and that they have been implemented in one source file.
 
 ### Example
-```
+```c
 // example nuklear options
 #define NK_INCLUDE_FIXED_TYPES
 #define NK_INCLUDE_STANDARD_IO
@@ -56,7 +56,7 @@ int main() {
 
 ### Options
 From `nkf_font.h`:
-```
+```c
 /**
  * Options
  * =======
